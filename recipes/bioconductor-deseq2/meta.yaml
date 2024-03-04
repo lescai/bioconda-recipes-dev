@@ -14,6 +14,8 @@ source:
   md5: 5eb89526ce9fd4da98b1a5e0b5ba0bf3
 build:
   number: 1
+  run_exports:
+  - {{ pin_subpackage("bioconductor-deseq2", max_pin="x") }}
   rpaths:
     - lib/R/lib/
     - lib/
